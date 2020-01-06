@@ -1,0 +1,27 @@
+// this snippet is found in wp-admin/includes/plugin.php
+function activate_plugin( $plugin, $redirect = '', $network_wide = false, $silent = false ) {
+    $plugin = plugin_basename( trim( $plugin ) );
+ 
+    if ( is_multisite() && ( $network_wide || is_network_only_plugin( $plugin ) ) ) {
+        $network_wide        = true;
+        $current             = get_site_option( 'active_sitewide_plugins', array() );
+        $_GET['networkwide'] = 1; // Back compat for plugins looking for this value.
+    } else {
+        $current = get_option( 'active_plugins', array() );
+    }
+    
+    
+  /*  // I did not know the extendability code for wordpress plugins was this easy.
+//Why wordpressORG downloaded Wordpress folders should be inside htdocs of XAMPP- x cross platform Apache MysQL PHP Pearl is slowly coming //to my organic understanding. It is like you have installed refrigerator(XAMPP) inside Room C(folder) of your building (Windows OS) and //for your fruit(Wordpress) to cool (here, to be local served through XAMPP) , you should put it inside cool chamber (htdocs file inside //XAMPP) inside refrigerator (XAMPP). */
+
+<?php
+
+/*
+Plugin Name: ABC
+Version: 1.7.2
+*/
+
+function content_extend($content){
+  return $content. "My new plugin";
+}
+add_filter('the_content', 'content_extend');
