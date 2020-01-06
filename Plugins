@@ -12,7 +12,10 @@ function activate_plugin( $plugin, $redirect = '', $network_wide = false, $silen
     
     
   /*  // I did not know the extendability code for wordpress plugins was this easy.
-//Why wordpressORG downloaded Wordpress folders should be inside htdocs of XAMPP- x cross platform Apache MysQL PHP Pearl is slowly coming //to my organic understanding. It is like you have installed refrigerator(XAMPP) inside Room C(folder) of your building (Windows OS) and //for your fruit(Wordpress) to cool (here, to be local served through XAMPP) , you should put it inside cool chamber (htdocs file inside //XAMPP) inside refrigerator (XAMPP). */
+//Why wordpressORG downloaded Wordpress folders should be inside htdocs of XAMPP- x cross platform Apache MysQL PHP Pearl 
+is slowly coming //to my organic understanding. It is like you have installed refrigerator(XAMPP) inside Room C(folder) of
+your building (Windows OS) and //for your fruit(Wordpress) to cool (here, to be local served through XAMPP) ,
+you should put it inside cool chamber (htdocs file inside //XAMPP) inside refrigerator (XAMPP). */
 
 <?php
 
