@@ -1,2 +1,2 @@
 # CodexWP
-This repo is created while on the learning curve of Wordpres. This repo is supersetted in way / vault for code snippetss
+Though this repo was created while on the learning curve of Wordpress, now this repo is supersetted in way as vault for code snippetss
